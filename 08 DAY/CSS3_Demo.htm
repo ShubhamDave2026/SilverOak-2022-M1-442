@@ -1,0 +1,148 @@
+﻿<html>
+
+<head>
+    <title>Demo CSS3</title>
+    <style type="text/css">
+        div {
+            height: 200px;
+            width: 200px;
+            transition: 3s;
+            font-size: 25px;
+            font-weight: bold;
+            color: #000000;
+            background-color: Red;
+        }
+
+        #TranslateDiv:hover {
+            -webkit-transform: translate(100px, 100px);
+            -moz-transform: translate(100px, 100px);
+            -ms-transform: translate(100px, 100px);
+            -o-transform: translate(100px, 100px);
+            transform: translate(100px, 100px);
+            background-color: Blue;
+            color: Yellow;
+        }
+
+        #RotateDiv:hover {
+            -webkit-transform: rotate(3600deg);
+            -moz-transform: rotate(3600deg);
+            -ms-transform: rotate(3600deg);
+            -o-transform: rotate(3600deg);
+            transform: rotate(3600deg);
+            background-color: Blue;
+            color: Yellow;
+
+        }
+
+        #RotateDiv3D:hover {
+            -webkit-transform: rotate3d(1, 1, 0, 360deg);
+            -moz-transform: rotate3d(1, 1, 0, 360deg);
+            -ms-transform: rotate3d(1, 1, 0, 360deg);
+            -o-transform: rotate3d(1, 1, 0, 360deg);
+            transform: rotate3d0t (1, 1, 0, 360deg);
+
+            text-shadow: 3px 3px 3px yellow;
+            background-color: Blue;
+            color: Yellow;
+
+        }
+
+        #SkewDiv:hover {
+            -webkit-transform: skew(45deg);
+            -moz-transform: skew(45deg);
+            -ms-transform: skew(45deg);
+            -o-transform: skew(45deg);
+            transform: skew(45deg);
+            background-color: Blue;
+            color: Yellow;
+        }
+
+        #ScaleDiv:hover {
+            -webkit-transform: scale(1.5, 0.5);
+            -moz-transform: scale(1.5, 0.5);
+            -ms-transform: scale(1.5, 0.5);
+            -o-transform: scale(1.5, 0.5);
+            transform: scale(1.5, 0.5);
+            background-color: Blue;
+            color: Yellow;
+        }
+
+        #OpacityDiv:hover {
+            opacity: 0.5;
+        }
+
+        #RGBADiv:hover {
+            background: rgba(128, 128, 0, 0.5);
+        }
+
+        #BoxShadowDiv:hover {
+
+            box-shadow: 0px 0px 30px Blue;
+
+        }
+
+        #TextShadowDiv:hover {
+            text-shadow: 3px 3px 3px yellow;
+        }
+
+        #BorderRadiusDiv:hover {
+            border-radius: 90%;
+        }
+
+        #OverFlowDiv {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <marquee direction="left" scrollamount="15">
+        <div id="TranslateDiv">Translate</div>
+    </marquee>
+    <hr />
+    <marquee direction="right" scrollamount="15">
+        <div id="RotateDiv" style="margin-left: 180px;">Rotate</div>
+    </marquee>
+    <hr />
+    <marquee direction="left" scrollamount="15">
+        <div id="RotateDiv3D" style="margin-left: 370px;">Rotate 3d</div>
+    </marquee>
+    <hr />
+    <marquee direction="right" scrollamount="15">
+        <div id="SkewDiv" style="margin-left: 560px;">Skew</div>
+    </marquee>
+    <hr />
+    <marquee direction="left" scrollamount="15">
+        <div id="ScaleDiv" style="margin-left: 670px;">Scale</div>
+    </marquee>
+    <hr />
+    <marquee direction="right" scrollamount="15">
+        <div id="OpacityDiv" style="margin-left: 840px;">Opacity</div>
+    </marquee>
+    <hr />
+    <marquee direction="left" scrollamount="15">
+        <div id="RGBADiv">RGBA</div>
+    </marquee>
+    <hr />
+    <marquee direction="right" scrollamount="15"><img id="BoxShadowDiv"
+            src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__480.jpg" height="200px"
+            width="200px"></marquee>
+    <hr />
+    <marquee direction="left" scrollamount="15">
+        <div id="TextShadowDiv">
+            <marquee>Text-Shadow</marquee>
+        </div>
+    </marquee>
+    <hr />
+    <marquee direction="right" scrollamount="15">
+        <div id="BorderRadiusDiv">Border Radius</div>
+    </marquee>
+    <hr />
+    <marquee direction="left" scrollamount="15">
+        <div id="OverFlowDiv">Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow
+            Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow </div>
+    </marquee>
+    <hr />
+</body>
+
+</html>

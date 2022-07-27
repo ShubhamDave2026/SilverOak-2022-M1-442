@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2.3.1-flex-wrap-row</title>
+
+    <style type="text/css">
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: verdana;
+      }
+
+      .main-container {
+        border: 10px solid #FF0000;
+        display: flex; /* block level flex container */
+        flex-direction: column;
+        height: 500px;
+        /* flex-wrap: nowrap; */ /* default is row nowrap */
+        /*flex-wrap: wrap;*/ /* wraps overflow items to bottom/next row */
+        flex-wrap: wrap; /* wraps overflow items to top row */
+      }
+
+      .item {
+        color: #ffffff;
+        font-size: 1rem;
+        padding: 0.75rem;
+        text-align: center;
+        margin: 10PX;
+        transition: transform .2s;
+      }
+      .item:hover{
+        transform: scale(1.2);
+      }
+
+      .item-1 {
+        background-color:#DDA0DD;
+      }
+      .item-2 {
+        background-color:#BF94E4;
+      }
+
+      .item-3 {
+        background-color:#734F96;
+      }
+
+      .item-4 {
+        background-color:#FBAED2;
+      }
+
+      .item-5 {
+        background-color:#EE82EE;
+      }
+      
+      .item-6 {
+        background-color:#ADE4CA;
+      }
+
+      .item-7 {
+        background-color:#A6D5AE;
+      }
+
+      .item-8 {
+        background-color:#8FBC8E;
+      }
+
+      .item-9 {
+        background-color: #64A466;
+      }
+      
+      .item-10 {
+        background-color:#2E8B56;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="main-container">
+      <div class="item item-1"><div id="hoverShow1"><a href="https://www.google.co.in/">google</a></div></div>
+      <div class="item item-2"><a href="https://www.google.com/maps/@23.0722695,72.5559743,15z">Google maps</a></div>
+      <div class="item item-3"><a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></div>
+      <div class="item item-4"><a href="https://www.amazon.in/C-Depth-Deepali-Srivastava/dp/8183330487/ref=zg_bs_14447040031_1/262-7986533-1191113?pd_rd_i=8183330487&psc=1">C</a></div>
+      <div class="item item-5"><a href="https://www.amazon.in/b?ie=UTF8&node=14447049031">JAVA</a></div>
+      <div class="item item-6"><a href="https://automatetheboringstuff.com/">PYTHON</a></div>
+      <div class="item item-7"><a href="https://www.amazon.in/Android-Programming-Ranch-Guide-Guides/dp/0135245125">ANDROID</a></div>
+      <div class="item item-8"><a href="https://www.amazon.in/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647">JQUERY</a></div>
+      <div class="item item-9"><a href="https://ruby-doc.com/docs/ProgrammingRuby/">RUBY</a></div>
+      <div class="item item-10"><a href="https://www.amazon.in/b?ie=UTF8&node=14447051031">PHP</a></div>
+      <div class="item item-1"><a href="https://www.google.co.in/">google</a></div>
+      <div class="item item-2"><a href="https://www.google.com/maps/@23.0722695,72.5559743,15z">Google maps</a></div>
+      <div class="item item-3"><a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></div>
+      <div class="item item-4"><a href="https://www.amazon.in/C-Depth-Deepali-Srivastava/dp/8183330487/ref=zg_bs_14447040031_1/262-7986533-1191113?pd_rd_i=8183330487&psc=1">C</a></div>
+      <div class="item item-5"><a href="https://www.amazon.in/b?ie=UTF8&node=14447049031">JAVA</a></div>
+      <div class="item item-6"><a href="https://automatetheboringstuff.com/">PYTHON</a></div>
+      <div class="item item-7"><a href="https://www.amazon.in/Android-Programming-Ranch-Guide-Guides/dp/0135245125">ANDROID</a></div>
+      <div class="item item-8"><a href="https://www.amazon.in/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647">JQUERY</a></div>
+      <div class="item item-9"><a href="https://ruby-doc.com/docs/ProgrammingRuby/">RUBY</a></div>
+      <div class="item item-10"><a href="https://www.amazon.in/b?ie=UTF8&node=14447051031">PHP</a></div>
+      <div class="item item-5"><a href="https://www.amazon.in/b?ie=UTF8&node=14447049031">JAVA</a></div>
+      <div class="item item-6"><a href="https://automatetheboringstuff.com/">PYTHON</a></div>
+      <div class="item item-7"><a href="https://www.amazon.in/Android-Programming-Ranch-Guide-Guides/dp/0135245125">ANDROID</a></div>
+      <div class="item item-8"><a href="https://www.amazon.in/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647">JQUERY</a></div>
+      <div class="item item-9"><a href="https://ruby-doc.com/docs/ProgrammingRuby/">RUBY</a></div>
+      <div class="item item-10"><a href="https://www.amazon.in/b?ie=UTF8&node=14447051031">PHP</a></div>
+    </div>
+    
+  </body>
+  
+</html>

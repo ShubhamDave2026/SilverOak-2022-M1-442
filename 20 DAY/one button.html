@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<title>jQuery Testing</title>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+   $(document).ready(function() {
+      $('#moveleft').click(function() {
+         $('#textbox').animate({
+         'marginLeft' : "-=30px" //moves left
+         });
+      });
+      $('#moveright').click(function() {
+         $('#textbox').animate({
+         'marginLeft' : "+=30px" //moves right
+         });
+      });
+      $('#movedown').click(function() {
+         $('#textbox').animate({
+         'marginTop' : "+=30px" //moves down
+         });
+      });
+      $('#moveup').click(function() {
+         $('#textbox').animate({
+         'marginTop' : "-=30px" //moves up
+         });
+      });
+   });
+   </script>
+</head>
+<body>
+      <div style="padding:20px;"> <button id="moveleft">Move Left</button>
+           <button id="moveright">Move right</button> <button id="movedown">Move Down</button>
+            <button id="moveup">Move Up</button>
+      </div>
+      <div id="textbox" style="position:absolute;padding:10px;background:#FFFFCC;width:300px;"> sAliquam congue ultricies sagittis.</div>   
+</body>
+</html>
+

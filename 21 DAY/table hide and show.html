@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+   $(document).ready(function() {
+    //To hide the table
+     $(".hidetable").click(function () {
+     $(".table_bg").hide("fast")
+   });
+    //To show the table
+     $(".showtable").click(function () {
+     $(".table_bg").show(2000);
+   });    
+   //To hide ODD rows
+     $(".hideoddrows").click(function () {
+     $(".table_bg  tr:odd").hide("slow")
+   });
+    //To show ODD rows
+     $(".showoddrows").click(function () {
+     $(".table_bg  tr:odd").show(2000)
+   });   
+});
+</script>
+
+<style>
+.table_bg {
+  width:40%;
+  font-family:verdana;
+  font-size:15px;  
+  color:#fff;
+  padding: 10px;
+  text-align:center;
+}
+.table_bg th{
+    background: #0780BA;
+
+    color: #fff;
+    line-height:35px;
+  }
+.table_bg td{
+    background: #99DBFB;    
+    padding:10px;
+
+    color: #000;
+  }  
+</style>
+</head>
+
+<body>
+  
+<h1>jQuery hide/show demo</h1>
+<button class="hidetable">Hide Table</button>
+<button class="showtable">Show Table</button>
+<button class="hideoddrows">Hide Odd rows</button>
+<button class="showoddrows">Show Odd rows</button>
+</p>
+<table class="table_bg">
+    <tr>
+     <th>ID</th>
+     <th>Name</th>
+     <th>Age</th>
+     <th>Salary</th>
+    </tr>
+    <tr>
+     <td>1</td>
+     <td>Jim</td>
+     <td>35</td>
+     <td>$5000.00</td>
+    </tr>
+    <tr>
+     <td>2</td>
+     <td>Anna</td>
+     <td>24</td>
+     <td>$3500.00</td>
+    </tr>
+    <tr>
+     <td>3</td>
+     <td>Adams</td>
+     <td>31</td>
+     <td>$4000.00</td>
+    </tr>
+    <tr>
+     <td>4</td>
+     <td>Adams</td>
+     <td>31</td>
+     <td>$4000.00</td>
+    </tr>
+    <tr>
+     <td>5</td>
+     <td>Adams</td>
+     <td>31</td>
+     <td>$4000.00</td>
+    </tr>        
+</table>
+
+</body>
+</html>
+
